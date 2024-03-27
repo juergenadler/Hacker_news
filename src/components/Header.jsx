@@ -1,11 +1,29 @@
 const Header = () => {
     return (
-        <header className="bg-neutral-800 p-10">
-            <div className="text-center">
-                <h3 className="text-xl text-neutral-500 py-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nihil?</p>
-            </div>
+        <div>
+        <header className="bg-indigo-500 p-10">
+        <div>
+            <h1>Y</h1>
+        </div>
+        <div>
+        <h2>Hacker News</h2>
+          <nav>
+           <ul>
+            <li>New</li>
+            <li>Past</li>
+            <li>Comments</li>
+            <li>Ask</li>
+            <li>Show</li>
+            <li>Jobs</li>
+            <li>Sumbit</li>
+           </ul>
+          </nav>
+        </div>
         </header>
+        <div>
+        <a href="#"> Login </a>
+        </div>
+        </div>
     )
 }
 
