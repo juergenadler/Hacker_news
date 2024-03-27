@@ -59,7 +59,7 @@ function App() {
           placeholder="Search term..."
           className="border border-gray-300 rounded p-2 mr-2"
         />
-        <button type="submit" className="bg-orange-800 text-white px-4 py-2 rounded">Search</button>
+        <button type="submit" className="bg-orange-700 text-white px-4 py-2 rounded">Search</button>
       </form>
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}
@@ -73,9 +73,9 @@ function App() {
             ))}
           </ul>
           <div className="flex justify-between mt-4">
-            <button onClick={goToPreviousPage} disabled={currentPage === 1} className="bg-gray-300 text-gray-700 px-4 py-2 rounded" style={{ opacity: currentPage === 1 ? 0.5 : 1 }}>Previous Page</button>
+            <button onClick={goToPreviousPage} disabled={currentPage === 1} className="bg-orange-700 text-white px-4 py-2 rounded-md " style={{ opacity: currentPage === 1 ? 0.5 : 1 }}>Previous Page</button>
             <p className="text-gray-700">Page {currentPage} of {totalPages}</p>
-            <button onClick={goToNextPage} disabled={currentPage === totalPages} className="bg-gray-300 text-gray-700 px-4 py-2 rounded" style={{ opacity: currentPage === totalPages ? 0.5 : 1 }}>Next Page</button>
+            <button onClick={goToNextPage} disabled={currentPage === totalPages} className="bg-orange-700 text-white px-4 py-2 rounded-md" style={{ opacity: currentPage === totalPages ? 0.5 : 1 }}>Next Page</button>
           </div>
         </div>
       )}
